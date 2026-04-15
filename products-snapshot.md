@@ -1,0 +1,258 @@
+- generic [active] [ref=e1]:
+  - banner:
+    - text:    
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - heading "" [level=1]:
+          - link "" [ref=e5] [cursor=pointer]:
+            - /url: /in/
+            - generic [ref=e6]: 
+      - generic [ref=e7]:
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Products" [ref=e10] [cursor=pointer]:
+              - /url: javascript:;
+          - listitem [ref=e11]:
+            - link "Solutions" [ref=e12] [cursor=pointer]:
+              - /url: javascript:;
+          - listitem [ref=e13]:
+            - link "Support" [ref=e14] [cursor=pointer]:
+              - /url: javascript:;
+          - listitem [ref=e15]:
+            - link "Explore" [ref=e16] [cursor=pointer]:
+              - /url: javascript:;
+          - listitem [ref=e17]:
+            - link "Partner Portal" [ref=e18] [cursor=pointer]:
+              - /url: javascript:;
+        - list [ref=e19]:
+          - listitem [ref=e20]:
+            - link "Search... " [ref=e21] [cursor=pointer]:
+              - /url: javascript:;
+              - text: Search...
+              - generic [ref=e22]: 
+          - listitem [ref=e23]:
+            - link " IN" [ref=e24] [cursor=pointer]:
+              - /url: javascript:;
+              - generic [ref=e25]: 
+              - text: IN
+          - listitem [ref=e26]:
+            - link "Contact Sales " [ref=e28] [cursor=pointer]:
+              - /url: /in/contact_us/
+              - generic [ref=e29]: Contact Sales
+              - generic [ref=e30]: 
+    - text:                                                                                                                                                                                              
+    - text:                                              
+  - generic [ref=e31]:
+    - generic [ref=e33]:
+      - group "1 / 1" [ref=e35]:
+        - img "pic" [ref=e36]
+        - generic [ref=e40]:
+          - heading "THE EXCELLENT WAY TO COLLABORATE" [level=2] [ref=e41]
+          - generic [ref=e42]: The XBoard V7 Series
+      - button "Next slide" [disabled]: next
+      - button "Previous slide" [disabled]: prev
+    - generic [ref=e47]:
+      - generic [ref=e48] [cursor=pointer]:
+        - generic [ref=e50]:
+          - img "icon" [ref=e51]
+          - img "icon" [ref=e52]
+        - paragraph [ref=e53]: Interactive Flat Panel
+      - generic [ref=e54] [cursor=pointer]:
+        - generic [ref=e56]:
+          - img "icon" [ref=e57]
+          - img "icon" [ref=e58]
+        - paragraph [ref=e59]: Commercial Display
+      - generic [ref=e60] [cursor=pointer]:
+        - generic [ref=e62]:
+          - img "icon" [ref=e63]
+          - img "icon" [ref=e64]
+        - paragraph [ref=e65]: LED Display
+      - generic [ref=e66] [cursor=pointer]:
+        - generic [ref=e68]:
+          - img "icon" [ref=e69]
+          - img "icon" [ref=e70]
+        - paragraph [ref=e71]: Unified Communication
+      - generic [ref=e72] [cursor=pointer]:
+        - generic [ref=e74]:
+          - img "icon" [ref=e75]
+          - img "icon" [ref=e76]
+        - paragraph [ref=e77]: Microsoft Teams Rooms
+      - generic [ref=e78] [cursor=pointer]:
+        - generic [ref=e80]:
+          - img "icon" [ref=e81]
+          - img "icon" [ref=e82]
+        - paragraph [ref=e83]: Capture System
+      - generic [ref=e84] [cursor=pointer]:
+        - generic [ref=e86]:
+          - img "icon" [ref=e87]
+          - img "icon" [ref=e88]
+        - paragraph [ref=e89]: Accessories
+      - generic [ref=e90] [cursor=pointer]:
+        - generic [ref=e92]:
+          - img "icon" [ref=e93]
+          - img "icon" [ref=e94]
+        - paragraph [ref=e95]: Software
+    - generic [ref=e99]:
+      - generic [ref=e101]:
+        - heading "INTERACTIVE FLAT PANEL" [level=2] [ref=e102]
+        - generic [ref=e103]: By integrating the functions of projector, whiteboard, advertising signage, computer, microphone, audio, etc, MAXHUB interactive displays could satisfy the needs of local meetings and remote collaborations.
+      - text:    
+      - generic [ref=e104]:
+        - generic [ref=e105]:
+          - link "pic" [ref=e106] [cursor=pointer]:
+            - /url: /in/xboard_v7_series
+            - img "pic" [ref=e107]
+          - generic [ref=e108]:
+            - heading "XBoard V7 V Series" [level=4] [ref=e109]
+            - paragraph [ref=e110]
+            - link "Learn More " [ref=e112] [cursor=pointer]:
+              - /url: /in/xboard_v7_series
+              - generic [ref=e113]: Learn More
+              - generic [ref=e114]: 
+        - text:    
+        - generic [ref=e115]:
+          - link "pic" [ref=e116] [cursor=pointer]:
+            - /url: /in/xboard_v7_t_series
+            - img "pic" [ref=e117]
+          - generic [ref=e118]:
+            - heading "XBoard V7 T Series" [level=4] [ref=e119]
+            - paragraph [ref=e120]
+            - link "Learn More " [ref=e122] [cursor=pointer]:
+              - /url: /in/xboard_v7_t_series
+              - generic [ref=e123]: Learn More
+              - generic [ref=e124]: 
+        - text:        
+        - generic [ref=e125]:
+          - link "pic" [ref=e126] [cursor=pointer]:
+            - /url: /in/e3_Series
+            - img "pic" [ref=e127]
+          - generic [ref=e128]:
+            - heading "E3 Series" [level=4] [ref=e129]
+            - paragraph [ref=e130]
+            - link "Learn More " [ref=e132] [cursor=pointer]:
+              - /url: /in/e3_Series
+              - generic [ref=e133]: Learn More
+              - generic [ref=e134]: 
+        - generic [ref=e135]:
+          - link "pic" [ref=e136] [cursor=pointer]:
+            - /url: /in/u4_series
+            - img "pic" [ref=e137]
+          - generic [ref=e138]:
+            - heading "U4 Series" [level=4] [ref=e139]
+            - paragraph [ref=e140]
+            - link "Learn More " [ref=e142] [cursor=pointer]:
+              - /url: /in/u4_series
+              - generic [ref=e143]: Learn More
+              - generic [ref=e144]: 
+        - text:                                    
+        - generic [ref=e145]:
+          - link "pic" [ref=e146] [cursor=pointer]:
+            - /url: /in/u3_series
+            - img "pic" [ref=e147]
+          - generic [ref=e148]:
+            - heading "U3 Series" [level=4] [ref=e149]
+            - paragraph [ref=e150]
+            - link "Learn More " [ref=e152] [cursor=pointer]:
+              - /url: /in/u3_series
+              - generic [ref=e153]: Learn More
+              - generic [ref=e154]: 
+        - text:   
+  - contentinfo [ref=e155]:
+    - generic [ref=e156]:
+      - generic [ref=e158] [cursor=pointer]: 
+      - generic [ref=e159]:
+        - heading "GET CONNECTED WITH US" [level=2] [ref=e160]
+        - generic [ref=e161]:
+          - link "icon icon" [ref=e163] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/maxhub-overseas/
+            - img "icon" [ref=e164]
+            - img "icon" [ref=e165]
+          - link "icon icon" [ref=e167] [cursor=pointer]:
+            - /url: https://www.facebook.com/MAXHUB.Global
+            - img "icon" [ref=e168]
+            - img "icon" [ref=e169]
+          - link "icon icon" [ref=e171] [cursor=pointer]:
+            - /url: https://twitter.com/MAXHUB_Global
+            - img "icon" [ref=e172]
+            - img "icon" [ref=e173]
+          - link "icon icon" [ref=e175] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UCMVdMpZsT-uiugSofEA3FEw
+            - img "icon" [ref=e176]
+            - img "icon" [ref=e177]
+        - generic [ref=e179]:
+          - generic [ref=e180]:
+            - generic [ref=e181]:
+              - heading "Company" [level=4] [ref=e182]: Company 
+              - list [ref=e183]:
+                - listitem [ref=e184]:
+                  - link "About MAXHUB" [ref=e185] [cursor=pointer]:
+                    - /url: /in/about_maxhub/
+                - listitem [ref=e186]:
+                  - link "Awards" [ref=e187] [cursor=pointer]:
+                    - /url: /in/newsroom/?tab_id=4
+                - listitem [ref=e188]:
+                  - link "Contact Us" [ref=e189] [cursor=pointer]:
+                    - /url: /in/contact_us/
+            - generic [ref=e190]:
+              - heading "News & Events" [level=4] [ref=e191]: News & Events 
+              - list [ref=e192]:
+                - listitem [ref=e193]:
+                  - link "News" [ref=e194] [cursor=pointer]:
+                    - /url: /in/about_maxhub/?tab_id=1
+                - listitem [ref=e195]:
+                  - link "Events" [ref=e196] [cursor=pointer]:
+                    - /url: /in/about_maxhub/?tab_id=2
+            - generic [ref=e197]:
+              - heading "Customer Stories" [level=4] [ref=e198]: Customer Stories 
+              - list [ref=e199]:
+                - listitem [ref=e200]:
+                  - link "Customer Stories" [ref=e201] [cursor=pointer]:
+                    - /url: /in/customer_stories/
+          - generic [ref=e202]:
+            - generic [ref=e204]:
+              - textbox "Enter your E-mail Address" [ref=e205]
+              - button "SUBMIT" [ref=e207] [cursor=pointer]
+            - generic [ref=e208]:
+              - text: Sign up to receive MAXHUB marketing emails. You can modify your subscription or unsubscribe at any time.
+              - text: "Address:"
+              - text: Smartworks Corporate Park, 04th Floor, Tower A,
+              - text: Sector 125, Noida, Uttar Pradesh -201313
+              - text: "Service Support:"
+              - text: "Toll Free No: 1800 12012 2045"
+              - text: "E-Mail ID: maxhubindia@maxhub.com"
+              - text: "WhatsApp: 7042790873"
+              - text: "Timings: Monday to Saturday"
+              - text: 09:30AM - 06:30 PM
+              - text: "Sales Enquiry:"
+              - text: "Email Us: SalesEnquiry.India@maxhub.com"
+              - text: "Mobile: 7428096923"
+              - text: "WhatsApp: 07303084527"
+        - generic [ref=e209]:
+          - link "Web Policy" [ref=e210] [cursor=pointer]:
+            - /url: /in/privacy-policy/
+          - text: "|"
+          - link "Cookies Policy" [ref=e211] [cursor=pointer]:
+            - /url: /in/cookies/
+    - generic [ref=e213]: "* Education products are exclusive to APAC and the Middle East. ©2025 MAXHUB. All rights reserved"
+  - text: 
+  - generic [ref=e215]:
+    - generic [ref=e217] [cursor=pointer]: 
+    - generic [ref=e218]:
+      - paragraph [ref=e220]:
+        - text: This site uses cookies to personalise your experience and analyse site traffic. By clicking ACCEPT or continuing to browse the site, you are agreeing to our use of cookies. See our
+        - link "Cookies" [ref=e221] [cursor=pointer]:
+          - /url: /in/cookies/
+        - text: and
+        - link "Privacy Policy" [ref=e222] [cursor=pointer]:
+          - /url: /in/privacy-policy/
+        - text: here
+      - generic [ref=e223]:
+        - link "Yes, accept all " [ref=e225] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e226]: Yes, accept all
+          - generic [ref=e227]: 
+        - link "No thanks, only essential cookies " [ref=e229] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e230]: No thanks, only essential cookies
+          - generic [ref=e231]: 
+  - text:  

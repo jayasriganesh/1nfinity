@@ -1,0 +1,391 @@
+- generic [active] [ref=e1]:
+  - banner:
+    - text:    
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - heading "" [level=1]:
+          - link "" [ref=e5] [cursor=pointer]:
+            - /url: /in/
+            - generic [ref=e6]: 
+      - generic [ref=e7]:
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "Products" [ref=e10] [cursor=pointer]:
+              - /url: javascript:;
+          - listitem [ref=e11]:
+            - link "Solutions" [ref=e12] [cursor=pointer]:
+              - /url: javascript:;
+          - listitem [ref=e13]:
+            - link "Support" [ref=e14] [cursor=pointer]:
+              - /url: javascript:;
+          - listitem [ref=e15]:
+            - link "Explore" [ref=e16] [cursor=pointer]:
+              - /url: javascript:;
+          - listitem [ref=e17]:
+            - link "Partner Portal" [ref=e18] [cursor=pointer]:
+              - /url: javascript:;
+        - list [ref=e19]:
+          - listitem [ref=e20]:
+            - link "Search... " [ref=e21] [cursor=pointer]:
+              - /url: javascript:;
+              - text: Search...
+              - generic [ref=e22]: 
+          - listitem [ref=e23]:
+            - link " IN" [ref=e24] [cursor=pointer]:
+              - /url: javascript:;
+              - generic [ref=e25]: 
+              - text: IN
+          - listitem [ref=e26]:
+            - link "Contact Sales " [ref=e28] [cursor=pointer]:
+              - /url: /in/contact_us/
+              - generic [ref=e29]: Contact Sales
+              - generic [ref=e30]: 
+    - text:                                                                                                                                                                                              
+    - text:                                              
+  - generic [ref=e72]:
+    - generic [ref=e74]:
+      - generic [ref=e75]:
+        - group "1 / 6" [ref=e417]:
+          - generic [ref=e80]:
+            - generic [ref=e84]: Discover the Complete Windows-Based Microsoft Teams Rooms Ecosystem
+            - link "Learn More " [ref=e88] [cursor=pointer]:
+              - /url: /in/xt-series/
+              - generic [ref=e89]: Learn More
+              - generic [ref=e90]: 
+        - group "2 / 6" [ref=e418]:
+          - generic [ref=e93]:
+            - generic [ref=e95]:
+              - generic [ref=e98]:
+                - text: MAXHUB
+                - text: Where Inspiration Moves Ahead.
+              - link "Learn More " [ref=e102] [cursor=pointer]:
+                - /url: /in/about_maxhub/
+                - generic [ref=e103]: Learn More
+                - generic [ref=e104]: 
+            - link "" [ref=e105] [cursor=pointer]:
+              - /url: javascript:;
+              - generic [ref=e106]: 
+        - group "3 / 6" [ref=e420]:
+          - generic [ref=e111]:
+            - generic [ref=e114]: MAXHUB X INTEL WHITEPAPER
+            - generic [ref=e117]: Transform Your BYOD Meeting Space into a Microsoft Teams Rooms
+            - link "Learn More " [ref=e121] [cursor=pointer]:
+              - /url: /in/intel_whitepaper/
+              - generic [ref=e122]: Learn More
+              - generic [ref=e123]: 
+        - group "4 / 6" [ref=e421]:
+          - generic [ref=e128]:
+            - generic [ref=e131]: ALL-IN-ON SOLUTION
+            - generic [ref=e134]: Experience the difference intelligent features and intuitive tools can create.
+            - link "Learn More " [ref=e138] [cursor=pointer]:
+              - /url: /in/products/
+              - generic [ref=e139]: Learn More
+              - generic [ref=e140]: 
+        - group "5 / 6" [ref=e422]:
+          - generic [ref=e145]:
+            - generic [ref=e148]: CREATE YOUR DREAM SPACE
+            - generic [ref=e151]: Be inspired by our solutions. Any industry, any platform any space is welcome.
+            - link "Learn More " [ref=e155] [cursor=pointer]:
+              - /url: /in/solutions/
+              - generic [ref=e156]: Learn More
+              - generic [ref=e157]: 
+        - group "6 / 6" [ref=e423]:
+          - generic [ref=e162]:
+            - generic [ref=e165]: PARTNER ALLIANCE
+            - generic [ref=e168]: Joint forces to create exceptional technology solutions.
+            - link "Learn More " [ref=e172] [cursor=pointer]:
+              - /url: /in/partners/
+              - generic [ref=e173]: Learn More
+              - generic [ref=e174]: 
+      - button "Next slide" [ref=e424] [cursor=pointer]: next
+      - button "Previous slide" [ref=e425] [cursor=pointer]: prev
+    - generic [ref=e177]:
+      - generic [ref=e463]:
+        - generic [ref=e464]:
+          - img "placeholder" [ref=e465]
+          - generic:
+            - img "bg" [ref=e466]
+            - img "bg" [ref=e467]
+          - generic:
+            - img "bg" [ref=e178]
+            - img "bg" [ref=e468]
+        - generic [ref=e470]:
+          - generic [ref=e179]:
+            - list [ref=e180]:
+              - listitem [ref=e181]:
+                - link "Industry " [ref=e182] [cursor=pointer]:
+                  - /url: javascript:;
+                  - generic [ref=e183]: Industry
+                  - generic [ref=e184]: 
+              - listitem [ref=e185]:
+                - link "Platform " [ref=e186] [cursor=pointer]:
+                  - /url: javascript:;
+                  - generic [ref=e187]: Platform
+                  - generic [ref=e188]: 
+            - link "All Solutions " [ref=e190] [cursor=pointer]:
+              - /url: /in/solutions/
+              - generic [ref=e191]: All Solutions
+              - generic [ref=e192]: 
+          - generic [ref=e193]:
+            - generic [ref=e195]:
+              - link "Enterprise" [ref=e197] [cursor=pointer]:
+                - /url: javascript:;
+              - link "Education" [ref=e199] [cursor=pointer]:
+                - /url: javascript:;
+            - generic [ref=e201]:
+              - heading "Enterprise solutions" [level=2] [ref=e202]
+              - paragraph [ref=e203]: We offer easy-to-use, high-quality conferencing solutions for all room sizes.
+              - link "Learn More " [ref=e205] [cursor=pointer]:
+                - /url: /in/solutions/enterprise.html
+                - generic [ref=e206]: Learn More
+                - generic [ref=e207]: 
+            - text: 
+          - text:  
+      - text: 
+    - generic [ref=e471]:
+      - generic [ref=e472]:
+        - group "1 / 3" [ref=e473]:
+          - generic [ref=e474]:
+            - img "bg" [ref=e475]
+            - generic [ref=e209]:
+              - heading "ULTRA IMMERSIVE VISION" [level=2] [ref=e210]
+              - generic [ref=e211]: MAXHUB Comercial Display Ultra-Wide Series
+              - link "Learn More " [ref=e214] [cursor=pointer]:
+                - /url: /in/uw-series
+                - generic [ref=e215]: Learn More
+                - generic [ref=e216]: 
+        - group "2 / 3" [ref=e477]:
+          - generic [ref=e478]:
+            - img "bg" [ref=e479]
+            - generic [ref=e217]:
+              - heading "Simple, Smart, Connected" [level=2] [ref=e218]
+              - generic [ref=e219]: MAXHUB Integrated LED Wall Raptor Series
+              - link "Learn More " [ref=e222] [cursor=pointer]:
+                - /url: javascript:;
+                - generic [ref=e223]: Learn More
+                - generic [ref=e224]: 
+        - group "3 / 3" [ref=e481]:
+          - generic [ref=e482]:
+            - img "bg" [ref=e483]
+            - generic [ref=e225]:
+              - heading "Crystal-Clear, Stable, Multifunctional" [level=2] [ref=e226]
+              - generic [ref=e227]: MAXHUB Commercial Display CMA Series
+              - link "Learn More " [ref=e230] [cursor=pointer]:
+                - /url: /in/cma_series
+                - generic [ref=e231]: Learn More
+                - generic [ref=e232]: 
+      - button "Next slide" [disabled]: next
+      - button "Previous slide" [ref=e485] [cursor=pointer]: prev
+    - generic [ref=e239]:
+      - generic [ref=e240]:
+        - generic [ref=e243]:
+          - generic [ref=e244]:
+            - img "placeholder" [ref=e245]
+            - img "placeholder" [ref=e246]
+          - link "Interactive Flat Panel " [ref=e247] [cursor=pointer]:
+            - /url: /in/products/?tab_id=1
+            - generic [ref=e248]:
+              - text: Interactive
+              - text: Flat Panel
+            - generic [ref=e249]: 
+        - generic [ref=e250]:
+          - generic [ref=e252]:
+            - generic [ref=e253]:
+              - img "placeholder" [ref=e254]
+              - img "placeholder" [ref=e255]
+            - link "LED Display " [ref=e256] [cursor=pointer]:
+              - /url: /in/products/?tab_id=3
+              - text: LED Display
+              - generic [ref=e257]: 
+          - generic [ref=e259]:
+            - generic [ref=e260]:
+              - img "placeholder" [ref=e261]
+              - img "placeholder" [ref=e262]
+            - link "Commercial Display " [ref=e263] [cursor=pointer]:
+              - /url: /in/products/?tab_id=2
+              - generic [ref=e264]:
+                - text: Commercial
+                - text: Display
+              - generic [ref=e265]: 
+      - generic [ref=e266]:
+        - generic [ref=e267]:
+          - generic [ref=e269]:
+            - generic [ref=e270]:
+              - img "placeholder" [ref=e271]
+              - img "placeholder" [ref=e272]
+            - link "Accessories " [ref=e273] [cursor=pointer]:
+              - /url: /in/products/?tab_id=5
+              - text: Accessories
+              - generic [ref=e274]: 
+          - generic [ref=e276]:
+            - generic [ref=e277]:
+              - img "placeholder" [ref=e278]
+              - img "placeholder" [ref=e279]
+            - link "Unified Communication " [ref=e280] [cursor=pointer]:
+              - /url: /in/products/?tab_id=4
+              - generic [ref=e281]:
+                - text: Unified
+                - text: Communication
+              - generic [ref=e282]: 
+        - generic [ref=e285]:
+          - generic [ref=e286]:
+            - img "placeholder" [ref=e287]
+            - img "placeholder" [ref=e288]
+          - link "Software " [ref=e289] [cursor=pointer]:
+            - /url: /in/products/?tab_id=6
+            - text: Software
+            - generic [ref=e290]: 
+    - generic [ref=e505]:
+      - generic [ref=e506]:
+        - group "1 / 3" [ref=e507]:
+          - generic [ref=e508]:
+            - img "bg" [ref=e509]
+            - generic [ref=e292]:
+              - heading "MAXHUB AWARDS" [level=2] [ref=e293]
+              - paragraph [ref=e294]: MAXHUB's extensive collaboration solutions and ground-breaking products have garnered widespread acclaim around the globe.
+              - link "Learn More " [ref=e297] [cursor=pointer]:
+                - /url: /in/newsroom/?tab_id=4
+                - generic [ref=e298]: Learn More
+                - generic [ref=e299]: 
+        - group "2 / 3" [ref=e511]:
+          - generic [ref=e512]:
+            - img "bg" [ref=e513]
+            - generic [ref=e300]:
+              - heading "SOCIAL RESPONSIBILITY" [level=2] [ref=e301]
+              - paragraph [ref=e302]: With practical actions, we will strive for the sustainable development of human society.
+              - link "Learn More " [ref=e305] [cursor=pointer]:
+                - /url: /in/about_maxhub/?#trigger-v6series
+                - generic [ref=e306]: Learn More
+                - generic [ref=e307]: 
+        - group "3 / 3" [ref=e515]:
+          - generic [ref=e516]:
+            - img "bg" [ref=e517]
+            - generic [ref=e308]:
+              - heading "NEWS & EVENTS" [level=2] [ref=e309]
+              - link "Learn More " [ref=e312] [cursor=pointer]:
+                - /url: /in/newsroom/
+                - generic [ref=e313]: Learn More
+                - generic [ref=e314]: 
+      - button "Next slide" [disabled]: next
+      - button "Previous slide" [ref=e519] [cursor=pointer]: prev
+    - generic [ref=e320]:
+      - heading "ABOUT MAXHUB" [level=2] [ref=e321]
+      - generic [ref=e322]:
+        - text: As an innovation-driven team, MAXHUB focuses on developing collaboration solutions that enable immersive communications. Since established in 2017, we have enhanced team creativity and productivity worldwide by providing advanced audio-visual technologies and one-stop solutions.
+        - text: MAXHUB Ecosystem focuses on a total solution for complete scenarios. From smart Interactive Displays, to high-quality UC products, to ground-breaking all-in-one LED and eye-catching Digital Signage, to Mobile Stands for flexible work, we've got you covered.
+      - link "Learn More " [ref=e324] [cursor=pointer]:
+        - /url: /in/about_maxhub/
+        - generic [ref=e325]: Learn More
+        - generic [ref=e326]: 
+      - generic [ref=e327]:
+        - generic [ref=e328]:
+          - generic [ref=e329]: 6500+
+          - generic [ref=e330]: Total Employees
+        - generic [ref=e331]:
+          - generic [ref=e332]: "30"
+          - generic [ref=e333]: Average Age
+        - generic [ref=e334]:
+          - generic [ref=e335]: 60%
+          - generic [ref=e336]: R&D Engineer
+        - generic [ref=e337]:
+          - generic [ref=e338]: US$ 3b
+          - generic [ref=e339]: Revenue
+  - contentinfo [ref=e340]:
+    - generic [ref=e341]:
+      - generic [ref=e343] [cursor=pointer]: 
+      - generic [ref=e344]:
+        - heading "GET CONNECTED WITH US" [level=2] [ref=e345]
+        - generic [ref=e346]:
+          - link "icon icon" [ref=e348] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/maxhub-overseas/
+            - img "icon" [ref=e349]
+            - img "icon" [ref=e350]
+          - link "icon icon" [ref=e352] [cursor=pointer]:
+            - /url: https://www.facebook.com/MAXHUB.Global
+            - img "icon" [ref=e353]
+            - img "icon" [ref=e354]
+          - link "icon icon" [ref=e356] [cursor=pointer]:
+            - /url: https://twitter.com/MAXHUB_Global
+            - img "icon" [ref=e357]
+            - img "icon" [ref=e358]
+          - link "icon icon" [ref=e360] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UCMVdMpZsT-uiugSofEA3FEw
+            - img "icon" [ref=e361]
+            - img "icon" [ref=e362]
+        - generic [ref=e364]:
+          - generic [ref=e365]:
+            - generic [ref=e366]:
+              - heading "Company" [level=4] [ref=e367]: Company 
+              - list [ref=e368]:
+                - listitem [ref=e369]:
+                  - link "About MAXHUB" [ref=e370] [cursor=pointer]:
+                    - /url: /in/about_maxhub/
+                - listitem [ref=e371]:
+                  - link "Awards" [ref=e372] [cursor=pointer]:
+                    - /url: /in/newsroom/?tab_id=4
+                - listitem [ref=e373]:
+                  - link "Contact Us" [ref=e374] [cursor=pointer]:
+                    - /url: /in/contact_us/
+            - generic [ref=e375]:
+              - heading "News & Events" [level=4] [ref=e376]: News & Events 
+              - list [ref=e377]:
+                - listitem [ref=e378]:
+                  - link "News" [ref=e379] [cursor=pointer]:
+                    - /url: /in/about_maxhub/?tab_id=1
+                - listitem [ref=e380]:
+                  - link "Events" [ref=e381] [cursor=pointer]:
+                    - /url: /in/about_maxhub/?tab_id=2
+            - generic [ref=e382]:
+              - heading "Customer Stories" [level=4] [ref=e383]: Customer Stories 
+              - list [ref=e384]:
+                - listitem [ref=e385]:
+                  - link "Customer Stories" [ref=e386] [cursor=pointer]:
+                    - /url: /in/customer_stories/
+          - generic [ref=e387]:
+            - generic [ref=e389]:
+              - textbox "Enter your E-mail Address" [ref=e390]
+              - button "SUBMIT" [ref=e392] [cursor=pointer]
+            - generic [ref=e393]:
+              - text: Sign up to receive MAXHUB marketing emails. You can modify your subscription or unsubscribe at any time.
+              - text: "Address:"
+              - text: Smartworks Corporate Park, 04th Floor, Tower A,
+              - text: Sector 125, Noida, Uttar Pradesh -201313
+              - text: "Service Support:"
+              - text: "Toll Free No: 1800 12012 2045"
+              - text: "E-Mail ID: maxhubindia@maxhub.com"
+              - text: "WhatsApp: 7042790873"
+              - text: "Timings: Monday to Saturday"
+              - text: 09:30AM - 06:30 PM
+              - text: "Sales Enquiry:"
+              - text: "Email Us: SalesEnquiry.India@maxhub.com"
+              - text: "Mobile: 7428096923"
+              - text: "WhatsApp: 07303084527"
+        - generic [ref=e394]:
+          - link "Web Policy" [ref=e395] [cursor=pointer]:
+            - /url: /in/privacy-policy/
+          - text: "|"
+          - link "Cookies Policy" [ref=e396] [cursor=pointer]:
+            - /url: /in/cookies/
+    - generic [ref=e398]: "* Education products are exclusive to APAC and the Middle East. ©2025 MAXHUB. All rights reserved"
+  - text: 
+  - generic [ref=e400]:
+    - generic [ref=e402] [cursor=pointer]: 
+    - generic [ref=e403]:
+      - paragraph [ref=e405]:
+        - text: This site uses cookies to personalise your experience and analyse site traffic. By clicking ACCEPT or continuing to browse the site, you are agreeing to our use of cookies. See our
+        - link "Cookies" [ref=e406] [cursor=pointer]:
+          - /url: /in/cookies/
+        - text: and
+        - link "Privacy Policy" [ref=e407] [cursor=pointer]:
+          - /url: /in/privacy-policy/
+        - text: here
+      - generic [ref=e408]:
+        - link "Yes, accept all " [ref=e410] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e411]: Yes, accept all
+          - generic [ref=e412]: 
+        - link "No thanks, only essential cookies " [ref=e414] [cursor=pointer]:
+          - /url: javascript:;
+          - generic [ref=e415]: No thanks, only essential cookies
+          - generic [ref=e416]: 
+  - text:  
