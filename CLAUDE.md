@@ -4,11 +4,11 @@
 # ─────────────────────────────────────────────────────────────
 
 ## Status
-Phase:    PHASE 4 — Build (Sprints 1-5 + Nav fixes done)
-Done:     Nav fix — dead links fixed, search + region selector live, 7 pages built
-Next:     /clone-build Sprint 6 (Product Page Templates)
+Phase:    PHASE 4 — Build (Sprints 1-8 mostly done)
+Done:     Sprints 6+7 complete · Sprint 8 email wired (Nodemailer) · Sprint 9 metadata+alt done
+Next:     Sprint 9 remaining (JSON-LD, sitemap, GA4) → Sprint 10 (polish) → Deploy
 Blocked:  None
-Date:     2026-04-09
+Date:     2026-04-23
 
 ## Navigation Reference (READ EVERY SESSION)
 Routes, interactive features, mega menu, footer links, new-page checklist:
@@ -382,39 +382,39 @@ Sprint 5.5 — Navigation & Interactivity Fixes (2026-04-09)
   - [x] Created docs/NAV_AND_INTERACTIVITY.md (living reference)
 
 Sprint 6 — Product Templates
-  - [ ] IFP product template
-  - [ ] Kiosk product template
-  - [ ] Generic display template
-  - [ ] CCTV template
+  - [x] IFP product template
+  - [x] Kiosk product template
+  - [x] Generic display template
+  - [x] CCTV template
 
 Sprint 7 — Content Pages
-  - [ ] /products
-  - [ ] /about
-  - [ ] /contact
-  - [ ] /get-quote
-  - [ ] /blog (static shell)
-  - [ ] /careers (static form)
-  - [ ] /privacy-policy
-  - [ ] /not-found
+  - [x] /products
+  - [x] /about
+  - [x] /contact
+  - [x] /get-quote
+  - [x] /blog (static shell)
+  - [x] /careers (static form — 2026-04-23)
+  - [x] /privacy-policy
+  - [x] /not-found (branded 404 — 2026-04-23)
 
 Sprint 8 — Forms + Functions
-  - [ ] Contact form + server action
-  - [ ] Get Quote form (separate)
-  - [ ] File attachment (PDF/DOC max 10MB)
-  - [ ] Cloudflare Turnstile on all forms
-  - [ ] Nodemailer → contact@infinityxglobal.com
-  - [ ] Google Sheets logging
-  - [ ] Rate limiting
+  - [x] Contact form + server action (Nodemailer — 2026-04-23)
+  - [x] Get Quote form (separate — Nodemailer — 2026-04-23)
+  - [x] File attachment (PDF/DOC/DOCX max 25MB — 2026-04-23)
+  - [x] Cloudflare Turnstile on all forms (test keys in dev — 2026-04-23)
+  - [x] Nodemailer → contact@infinityxglobal.com
+  - [x] Google Sheets logging (Contact/Quote/Newsletter/Careers tabs — 2026-04-23)
+  - [x] Rate limiting (10 req/hr per IP per endpoint — 2026-04-23)
 
 Sprint 9 — SEO
-  - [ ] generateMetadata() per page
+  - [x] generateMetadata() per page
   - [ ] JSON-LD Organization schema
   - [ ] JSON-LD Product schema
   - [ ] sitemap.xml
   - [ ] robots.txt
   - [ ] GA4 integration
   - [ ] Search Console verified
-  - [ ] Alt text all images
+  - [x] Alt text all images
   - [ ] OG images per page
 
 Sprint 10 — Polish
@@ -426,11 +426,11 @@ Sprint 10 — Polish
 
 ## Security Checklist
 - [x] .gitignore in place
-- [ ] .env.local created (never commit)
-- [ ] .env.example created (commit — no secrets)
+- [x] .env.local created (never commit)
+- [x] .env.example created (commit — no secrets)
 - [ ] Security headers in next.config.mjs
-- [ ] Turnstile on all forms
-- [ ] Server-side validation on all inputs
+- [x] Turnstile on all forms
+- [x] Server-side validation on all inputs (Zod on all API routes)
 - [ ] Rate limiting on server actions
 - [ ] TypeScript strict mode ON
 

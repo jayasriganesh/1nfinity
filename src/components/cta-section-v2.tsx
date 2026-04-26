@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Section } from '@/components/layout/section'
-import { cn } from '@/lib/utils'
 
 // ─── Types ────────────────────────────────────────────────
 interface CtaSectionProps {

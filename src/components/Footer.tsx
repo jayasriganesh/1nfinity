@@ -6,12 +6,32 @@ import Link from "next/link";
 export function Footer() {
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
+  const [subStatus, setSubStatus] = useState<'idle' | 'submitting' | 'error'>('idle');
+  const [subError, setSubError] = useState('');
 
-  const handleSubscribe = (e: React.FormEvent) => {
+  const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email.trim()) {
-      setSubscribed(true);
-      setEmail("");
+    if (!email.trim()) return;
+    setSubStatus('submitting');
+    setSubError('');
+    try {
+      const res = await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+      const json = await res.json();
+      if (!res.ok) {
+        setSubError(json.error ?? 'Failed to subscribe. Please try again.');
+        setSubStatus('error');
+      } else {
+        setSubscribed(true);
+        setEmail('');
+        setSubStatus('idle');
+      }
+    } catch {
+      setSubError('Network error. Please try again.');
+      setSubStatus('error');
     }
   };
 
@@ -43,6 +63,11 @@ export function Footer() {
                 <li>
                   <Link href="/contact" className="hover:text-white transition-colors">
                     Contact Us
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/careers" className="hover:text-white transition-colors">
+                    Careers
                   </Link>
                 </li>
                 <li>
@@ -136,11 +161,15 @@ export function Footer() {
                     />
                     <button
                       type="submit"
-                      className="bg-[#196FD2] px-[24px] py-[12px] text-[14px] text-white hover:bg-[#1560b8] transition-colors"
+                      disabled={subStatus === 'submitting'}
+                      className="bg-[#196FD2] px-[24px] py-[12px] text-[14px] text-white hover:bg-[#1560b8] disabled:opacity-60 disabled:cursor-not-allowed transition-colors"
                     >
-                      SUBMIT
+                      {subStatus === 'submitting' ? '...' : 'SUBMIT'}
                     </button>
                   </form>
+                  {subStatus === 'error' && (
+                    <p className="text-[12px] text-red-400 mt-[8px]">{subError}</p>
+                  )}
                   <p className="text-[12px] text-white/40 mt-[12px] leading-[18px]">
                     Product updates and industry insights from InfinityX Global.
                     Unsubscribe at any time.

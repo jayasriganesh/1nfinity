@@ -2,8 +2,15 @@ import type { Metadata } from 'next'
 import { QuoteForm } from './QuoteForm'
 
 export const metadata: Metadata = {
-  title: 'Get a Quote | InfinityX Global',
-  description: 'Request a free consultation and quote for your AV integration project. InfinityX Global responds within 48 hours.',
+  title: 'Get a Quote | AV & Display Solutions — InfinityX Global',
+  description: 'Request a free consultation and quote for interactive flat panels, kiosks, CCTV, or LED video walls. InfinityX Global responds within 48 hours. Serving enterprise and education across India.',
+  keywords: ['get quote interactive flat panel India', 'AV solutions quote India', 'request demo display solutions', 'CCTV quote India', 'kiosk pricing India'],
+  openGraph: {
+    title: 'Get a Quote | AV & Display Solutions — InfinityX Global',
+    description: 'Free consultation and quote for interactive flat panels, kiosks, CCTV, and LED video walls. 48-hour response. Pan India.',
+    url: 'https://infinityxglobal.com/get-quote',
+    type: 'website',
+  },
 }
 
 const benefits = [

@@ -1,9 +1,14 @@
 'use client'
 
 import { useState } from 'react'
+import { Turnstile } from '@marsidev/react-turnstile'
 
 export function QuoteForm() {
-  const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle')
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle')
+  const [errorMsg, setErrorMsg] = useState('')
+  const [attachment, setAttachment] = useState<File | null>(null)
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null)
+  const [phoneCode, setPhoneCode] = useState('+91')
   const [form, setForm] = useState({
     name: '',
     company: '',
@@ -25,8 +30,28 @@ export function QuoteForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setStatus('submitting')
-    await new Promise((r) => setTimeout(r, 800))
-    setStatus('success')
+    setErrorMsg('')
+    try {
+      const fd = new FormData()
+      Object.entries(form).forEach(([k, v]) => {
+        if (k === 'phone') return
+        if (v) fd.append(k, v)
+      })
+      fd.append('phone', form.phone ? `${phoneCode}${form.phone}` : '')
+      if (attachment) fd.append('attachment', attachment)
+      if (turnstileToken) fd.append('cf-turnstile-response', turnstileToken)
+      const res = await fetch('/api/quote', { method: 'POST', body: fd })
+      const json = await res.json()
+      if (!res.ok) {
+        setErrorMsg(json.error ?? 'Something went wrong. Please try again.')
+        setStatus('error')
+      } else {
+        setStatus('success')
+      }
+    } catch {
+      setErrorMsg('Network error. Please check your connection and try again.')
+      setStatus('error')
+    }
   }
 
   if (status === 'success') {
@@ -91,12 +116,26 @@ export function QuoteForm() {
           <label htmlFor="phone" className="block text-[12px] font-semibold uppercase tracking-widest text-[#999] mb-2">
             Phone *
           </label>
-          <input
-            id="phone" name="phone" type="tel" required
-            value={form.phone} onChange={handleChange}
-            className="w-full border border-[#e5e5e5] rounded-[4px] px-4 py-3 text-[14px] text-[#333] placeholder:text-[#ccc] focus:outline-none focus:border-[#196FD2] focus:ring-2 focus:ring-[#196FD2]/20 transition-colors"
-            placeholder="+91 98765 43210"
-          />
+          <div className="flex">
+            <select
+              value={phoneCode}
+              onChange={(e) => setPhoneCode(e.target.value)}
+              className="border border-[#e5e5e5] border-r-0 rounded-l-[4px] px-2 py-3 text-[14px] text-[#333] bg-white focus:outline-none focus:border-[#196FD2] transition-colors"
+            >
+              <option value="+91">+91 IN</option>
+              <option value="+977">+977 NP</option>
+              <option value="+94">+94 LK</option>
+              <option value="+975">+975 BT</option>
+              <option value="+966">+966 SA</option>
+              <option value="+971">+971 AE</option>
+            </select>
+            <input
+              id="phone" name="phone" type="tel" required
+              value={form.phone} onChange={handleChange}
+              className="flex-1 border border-[#e5e5e5] rounded-r-[4px] px-4 py-3 text-[14px] text-[#333] placeholder:text-[#ccc] focus:outline-none focus:border-[#196FD2] focus:ring-2 focus:ring-[#196FD2]/20 transition-colors"
+              placeholder="98765 43210"
+            />
+          </div>
         </div>
       </div>
 
@@ -181,6 +220,36 @@ export function QuoteForm() {
         />
       </div>
 
+      <div>
+        <label htmlFor="attachment" className="block text-[12px] font-semibold uppercase tracking-widest text-[#999] mb-2">
+          Attach RFQ / Brochure <span className="normal-case tracking-normal font-normal">(PDF, DOC, DOCX — max 25MB)</span>
+        </label>
+        <input
+          id="attachment"
+          name="attachment"
+          type="file"
+          accept=".pdf,.doc,.docx"
+          onChange={(e) => setAttachment(e.target.files?.[0] ?? null)}
+          className="w-full text-[14px] text-[#333] file:mr-4 file:py-2 file:px-4 file:rounded-[4px] file:border-0 file:text-[13px] file:font-semibold file:bg-[#f0f6ff] file:text-[#196FD2] hover:file:bg-[#e0edff] cursor-pointer"
+        />
+        {attachment && (
+          <p className="text-[12px] text-[#666] mt-1">{attachment.name} ({(attachment.size / 1024 / 1024).toFixed(1)} MB)</p>
+        )}
+      </div>
+
+      {process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY && (
+        <Turnstile
+          siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}
+          onSuccess={setTurnstileToken}
+          onError={() => setTurnstileToken(null)}
+          onExpire={() => setTurnstileToken(null)}
+        />
+      )}
+      {status === 'error' && (
+        <p className="text-[13px] text-red-600 bg-red-50 border border-red-200 rounded-[4px] px-4 py-3">
+          {errorMsg}
+        </p>
+      )}
       <button
         type="submit"
         disabled={status === 'submitting'}

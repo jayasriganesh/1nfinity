@@ -2,8 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'About Us | InfinityX Global',
-  description: 'InfinityX Global — trusted AV integration partner for enterprise and education across India. Founded 2014, 4000+ installations, MSME · ISO · GeM certified.',
+  title: 'About InfinityX Global | System Integration Company India Since 2014',
+  description: 'InfinityX Global — India\'s trusted system integration and intelligent display solutions company. Founded 2014. 4000+ installations. MSME, ISO, and GeM certified. Headquartered in Hyderabad, serving pan India.',
+  keywords: ['AV integration company India', 'system integration company Hyderabad', 'display solutions provider India', 'MSME ISO GeM certified', 'IT infrastructure company India'],
+  openGraph: {
+    title: 'About InfinityX Global | System Integration Company India Since 2014',
+    description: 'India\'s trusted system integration and display solutions company. Founded 2014. 4000+ installations. MSME, ISO, GeM certified. Pan India.',
+    url: 'https://infinityxglobal.com/about',
+    type: 'website',
+  },
 }
 
 const stats = [

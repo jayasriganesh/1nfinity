@@ -4,9 +4,23 @@ import Image from 'next/image'
 import { v1Categories } from '@/data/products'
 
 export const metadata: Metadata = {
-  title: 'Our Products | InfinityX Global',
+  title: 'Products | Interactive Displays, Kiosks & CCTV — InfinityX Global',
   description:
-    'InfinityX Global offers a comprehensive range of display solutions for enterprise, education, retail, and government sectors. Explore our complete product portfolio.',
+    'Explore InfinityX Global\'s full range — interactive flat panels, digital kiosks, CCTV security systems, and LED video walls. Trusted by enterprises and schools across India since 2014.',
+  keywords: [
+    'interactive flat panel supplier India',
+    'digital kiosk manufacturer India',
+    'CCTV solutions supplier',
+    'AV products India',
+    'display solutions Hyderabad',
+    'intelligent display solutions India',
+  ],
+  openGraph: {
+    title: 'Products | Interactive Displays, Kiosks & CCTV — InfinityX Global',
+    description: 'Interactive flat panels, digital kiosks, CCTV, and LED video walls from InfinityX Global. Trusted across India since 2014.',
+    url: 'https://infinityxglobal.com/products',
+    type: 'website',
+  },
 }
 
 export default function ProductsPage() {

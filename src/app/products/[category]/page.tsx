@@ -12,13 +12,56 @@ export async function generateStaticParams() {
   return productCategories.map((cat) => ({ category: cat.slug }))
 }
 
+const categoryKeywords: Record<string, string[]> = {
+  'interactive-flat-panels': [
+    'interactive flat panel India',
+    'interactive display India',
+    'smart board India',
+    '4K interactive whiteboard',
+    'interactive flat panel Hyderabad',
+    'meeting room display India',
+    'classroom interactive display',
+  ],
+  kiosks: [
+    'digital kiosk India',
+    'touch screen kiosk',
+    'interactive kiosk Hyderabad',
+    'retail kiosk signage India',
+    'information kiosk',
+    'digital standee India',
+  ],
+  cctv: [
+    'CCTV solutions India',
+    'IP camera system',
+    'surveillance cameras Hyderabad',
+    'NVR recording system',
+    'CCTV installation India',
+    'security camera system',
+  ],
+}
+
+const categoryTitles: Record<string, string> = {
+  'interactive-flat-panels': 'Interactive Flat Panels India | 4K Smart Displays',
+  kiosks: 'Digital Kiosks & Signage India | Touch & Non-Touch',
+  cctv: 'CCTV & Security Systems India | Surveillance Solutions',
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { category: slug } = await params
   const category = getCategoryBySlug(slug)
   if (!category) return {}
+  const title = categoryTitles[slug] ?? category.name
+  const BASE = 'https://infinityxglobal.com'
   return {
-    title: `${category.name} | InfinityX Global`,
+    title,
     description: category.description,
+    keywords: categoryKeywords[slug] ?? [],
+    openGraph: {
+      title: `${title} — InfinityX Global`,
+      description: category.description,
+      url: `${BASE}/products/${slug}`,
+      type: 'website',
+    },
   }
 }
 

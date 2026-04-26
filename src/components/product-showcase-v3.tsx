@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { ArrowRight, ChevronDown } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { cn } from '@/lib/utils'
-import { Section, SectionHeader } from '@/components/layout/section'
+import { Section } from '@/components/layout/section'
 import { Card } from '@/components/layout/card'
 import { spacing, grid } from '@/lib/layout-system'
 

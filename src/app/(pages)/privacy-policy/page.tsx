@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Privacy Policy | InfinityX Global',
   description: 'InfinityX Global Privacy Policy — how we collect, use, and protect your personal information.',
+  robots: { index: false, follow: true },
 }
 
 export default function PrivacyPolicyPage() {

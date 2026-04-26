@@ -3,8 +3,15 @@ import Link from 'next/link'
 import { ContactForm } from './ContactForm'
 
 export const metadata: Metadata = {
-  title: 'Contact Us | InfinityX Global',
-  description: 'Get in touch with InfinityX Global for sales enquiries, technical support, and partnership opportunities.',
+  title: 'Contact InfinityX Global | Sales & Support Enquiries',
+  description: 'Get in touch with InfinityX Global for AV product enquiries, installation support, and pricing. Call +91 82288 22849 or email contact@infinityxglobal.com. Hyderabad, serving pan India.',
+  keywords: ['contact AV solutions India', 'interactive flat panel enquiry', 'display solutions Hyderabad contact', 'AV integration support India'],
+  openGraph: {
+    title: 'Contact InfinityX Global | Sales & Support Enquiries',
+    description: 'Reach InfinityX Global for AV product enquiries and pricing. +91 82288 22849 · contact@infinityxglobal.com · Hyderabad, pan India.',
+    url: 'https://infinityxglobal.com/contact',
+    type: 'website',
+  },
 }
 
 export default function ContactPage() {

@@ -31,7 +31,7 @@ interface ProductPageTemplateProps {
 }
 
 // ─── Root ─────────────────────────────────────────────────
-export function ProductPageTemplate({ product, categoryName, categorySlug }: ProductPageTemplateProps) {
+export function ProductPageTemplate({ product, categoryName: _categoryName, categorySlug }: ProductPageTemplateProps) {
   const quoteUrl = `/get-quote?product=${encodeURIComponent(product.slug)}&category=${encodeURIComponent(categorySlug)}`
   const [activeTab, setActiveTab] = useState<string>('')
   const tabNavRef = useRef<HTMLDivElement>(null)
@@ -269,8 +269,8 @@ function ProductHighlights({ highlights }: { highlights: Highlight[] }) {
 // ─── 3. Feature Group ─────────────────────────────────────
 function ProductFeatureGroup({
   group,
-  index,
-  quoteUrl,
+  index: _index,
+  quoteUrl: _quoteUrl,
 }: {
   group: FeatureGroup
   index: number
@@ -535,7 +535,7 @@ function ProductScenarios({ scenarios }: { scenarios: NonNullable<Product['scena
 function ProductSpecs({
   specs,
   specModels,
-  productName,
+  productName: _productName,
 }: {
   specs?: Record<string, string>
   specModels?: SpecModel[]
@@ -568,7 +568,7 @@ function ProductSpecs({
 
         {/* Model switcher tabs */}
         {hasModels && (
-          <div className="flex gap-1 mb-6 border-b border-border overflow-x-auto">
+          <div className="flex gap-1 mb-6 border-b border-border">
             {specModels!.map((model, i) => (
               <button
                 key={i}

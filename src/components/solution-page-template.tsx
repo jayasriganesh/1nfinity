@@ -309,7 +309,7 @@ function SolutionStories({ solution }: { solution: Solution }) {
             Customer Stories
           </h2>
           <p className="text-[15px] text-text-secondary leading-relaxed max-w-2xl">
-            For the past decade, InfinityX Global's complete collaboration solutions have helped
+            For the past decade, InfinityX Global&apos;s complete collaboration solutions have helped
             organisations across India transform the way they work, teach, and communicate.
           </p>
         </motion.div>

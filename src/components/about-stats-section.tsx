@@ -81,7 +81,7 @@ export function AboutStatsSection({ className }: AboutStatsSectionProps) {
 
           <p className="text-lg lg:text-xl text-white/90 leading-relaxed mb-10">
             InfinityX Ecosystem focuses on a total solution for complete scenarios. From smart Interactive Displays, to high-quality
-            LED Video Walls and eye-catching Digital Signage, to CCTV & Security Solutions, we've got you covered.
+            LED Video Walls and eye-catching Digital Signage, to CCTV & Security Solutions, we&apos;ve got you covered.
           </p>
 
           {/* Learn More Button */}

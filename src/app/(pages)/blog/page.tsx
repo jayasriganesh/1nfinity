@@ -2,8 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'News & Insights | InfinityX Global',
-  description: 'Latest news, product updates, and industry insights from InfinityX Global.',
+  title: 'News & Insights | AV Industry Updates — InfinityX Global',
+  description: 'AV industry news, interactive display insights, and collaboration technology updates from InfinityX Global. Stay informed on display solutions and IT infrastructure trends in India.',
+  keywords: ['AV industry news India', 'interactive display updates', 'display solutions blog', 'IT infrastructure insights India'],
+  openGraph: {
+    title: 'News & Insights | AV Industry Updates — InfinityX Global',
+    description: 'AV industry news and display technology insights from InfinityX Global.',
+    url: 'https://infinityxglobal.com/blog',
+    type: 'website',
+  },
 }
 
 export default function BlogPage() {
