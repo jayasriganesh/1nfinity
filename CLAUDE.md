@@ -5,8 +5,8 @@
 
 ## Status
 Phase:    PHASE 4 — Build (Sprints 1-8 mostly done)
-Done:     Sprints 6+7 complete · Sprint 8 email wired (Nodemailer) · Sprint 9 metadata+alt done
-Next:     Sprint 9 remaining (JSON-LD, sitemap, GA4) → Sprint 10 (polish) → Deploy
+Done:     Sprints 6+7+8+9 complete
+Next:     Sprint 10 (polish) → Deploy
 Blocked:  None
 Date:     2026-04-23
 
@@ -408,14 +408,14 @@ Sprint 8 — Forms + Functions
 
 Sprint 9 — SEO
   - [x] generateMetadata() per page
-  - [ ] JSON-LD Organization schema
-  - [ ] JSON-LD Product schema
-  - [ ] sitemap.xml
-  - [ ] robots.txt
-  - [ ] GA4 integration
-  - [ ] Search Console verified
+  - [x] JSON-LD Organization schema
+  - [x] JSON-LD Product schema
+  - [x] sitemap.xml
+  - [x] robots.txt
+  - [x] GA4 integration
+  - [x] Search Console verified (meta tag wired via NEXT_PUBLIC_GSC_VERIFICATION — client clicks verify in GSC)
   - [x] Alt text all images
-  - [ ] OG images per page
+  - [x] OG images per page (root + products + about + contact + get-quote + solutions + dynamic category/product)
 
 Sprint 10 — Polish
   - [ ] 404 page (branded)

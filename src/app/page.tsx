@@ -5,6 +5,7 @@ import { DisplaySeries } from "@/components/DisplaySeries";
 import { ProductSeries } from "@/components/ProductSeries";
 import { NewsAwards } from "@/components/NewsAwards";
 import { AboutMaxhub } from "@/components/AboutMaxhub";
+import { ClientsScroll } from "@/components/ClientsScroll";
 import { Footer } from "@/components/Footer";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <ProductSeries />
         <NewsAwards />
         <AboutMaxhub />
+        <ClientsScroll />
       </main>
       <Footer />
     </>

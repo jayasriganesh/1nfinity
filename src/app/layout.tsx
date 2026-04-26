@@ -114,6 +114,9 @@ export const metadata: Metadata = {
       "Premier system integration partner delivering high-performance IT infrastructure and intelligent display solutions across India.",
   },
   robots: { index: true, follow: true },
+  ...(process.env.NEXT_PUBLIC_GSC_VERIFICATION
+    ? { verification: { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION } }
+    : {}),
 };
 
 export default function RootLayout({
