@@ -9,7 +9,7 @@ const schema = z.object({
   name: z.string().min(2),
   company: z.string().optional(),
   email: z.string().email(),
-  phone: z.string().optional(),
+  phone: z.string().regex(/^\+?[0-9]{7,13}$/, 'Invalid phone number').optional(),
   subject: z.string().min(1),
   message: z.string().min(1),
 })

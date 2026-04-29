@@ -1,7 +1,12 @@
 import { ImageResponse } from 'next/og'
-import { getCategoryBySlug } from '@/data/products'
+import { getCategoryBySlug, productCategories } from '@/data/products'
 
+export const dynamic = 'force-static'
 export const alt = 'Product Category — InfinityX Global'
+
+export function generateStaticParams() {
+  return productCategories.map((cat) => ({ category: cat.slug }))
+}
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 

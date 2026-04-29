@@ -7,11 +7,31 @@ const securityHeaders = [
   { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
   { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
   { key: 'X-DNS-Prefetch-Control', value: 'on' },
+  {
+    key: 'Strict-Transport-Security',
+    value: 'max-age=63072000; includeSubDomains',
+  },
+  {
+    key: 'Content-Security-Policy',
+    value: [
+      "default-src 'none'",
+      "script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com https://www.googletagmanager.com https://www.google-analytics.com",
+      "style-src 'self' 'unsafe-inline'",
+      "img-src 'self' data: https://images.unsplash.com",
+      "font-src 'self'",
+      "connect-src 'self' https://challenges.cloudflare.com https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://region1.google-analytics.com",
+      "frame-src https://challenges.cloudflare.com",
+      "form-action 'self'",
+      "frame-ancestors 'none'",
+      "base-uri 'self'",
+      "upgrade-insecure-requests",
+    ].join('; '),
+  },
 ];
 
 const nextConfig = {
   output: isGithubPages ? 'export' : undefined,
-  basePath: isGithubPages ? '/1nfinity' : '',
+  basePath: isGithubPages ? '/infinityxglobal' : '',
   images: {
     unoptimized: isGithubPages,
     remotePatterns: [

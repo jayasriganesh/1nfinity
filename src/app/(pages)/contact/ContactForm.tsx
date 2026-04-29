@@ -20,7 +20,10 @@ export function ContactForm() {
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
-    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }))
+    const value = e.target.name === 'phone'
+      ? e.target.value.replace(/[^0-9]/g, '').slice(0, 10)
+      : e.target.value
+    setForm((prev) => ({ ...prev, [e.target.name]: value }))
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -139,6 +142,8 @@ export function ContactForm() {
               id="phone"
               name="phone"
               type="tel"
+              inputMode="numeric"
+              maxLength={10}
               value={form.phone}
               onChange={handleChange}
               className="flex-1 border border-[#e5e5e5] rounded-r-[4px] px-4 py-3 text-[14px] text-[#333] placeholder:text-[#ccc] focus:outline-none focus:border-[#196FD2] focus:ring-2 focus:ring-[#196FD2]/20 transition-colors"

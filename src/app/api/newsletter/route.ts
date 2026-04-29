@@ -3,6 +3,7 @@ import { z } from 'zod'
 import { transporter } from '@/lib/mailer'
 import { checkRateLimit } from '@/lib/rateLimit'
 import { logToSheet } from '@/lib/sheets'
+import { verifyTurnstile } from '@/lib/turnstile'
 
 const schema = z.object({
   email: z.string().email(),
@@ -16,8 +17,15 @@ export async function POST(req: NextRequest) {
   }
 
   try {
-    const body = await req.json()
-    const { email } = schema.parse(body)
+    const body = await req.json() as Record<string, unknown>
+    const { 'cf-turnstile-response': turnstileToken, ...rest } = body
+
+    const turnstileOk = await verifyTurnstile(turnstileToken as string | null)
+    if (!turnstileOk) {
+      return NextResponse.json({ error: 'Security check failed. Please refresh and try again.' }, { status: 400 })
+    }
+
+    const { email } = schema.parse(rest)
 
     await transporter.sendMail({
       from: `"InfinityX Global Website" <${process.env.SMTP_USER}>`,

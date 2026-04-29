@@ -8,7 +8,7 @@ import { logToSheet } from '@/lib/sheets'
 const schema = z.object({
   name: z.string().min(2),
   email: z.string().email(),
-  phone: z.string().min(1),
+  phone: z.string().regex(/^\+?[0-9]{7,13}$/, 'Invalid phone number'),
   role: z.string().min(1),
   experience: z.string().min(1),
   message: z.string().optional(),
