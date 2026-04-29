@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { pub } from "@/lib/publicPath";
 
 interface CardData {
   title: string;
@@ -47,7 +48,7 @@ export function NewsAwards() {
           {/* Background image */}
           <div
             className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
-            style={{ backgroundImage: `url(${card.bgImage})` }}
+            style={{ backgroundImage: `url(${pub(card.bgImage)})` }}
           />
 
           {/* Dark gradient overlay */}

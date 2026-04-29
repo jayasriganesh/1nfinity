@@ -1,3 +1,5 @@
+import { pub } from "@/lib/publicPath";
+
 const allImages = [
   'Screenshot 2026-02-22 111241.png',
   'Screenshot 2026-02-22 111247.png',
@@ -54,7 +56,7 @@ function MarqueeRow({ images, direction }: { images: string[]; direction: 'left'
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={`/scroll/${encodeURIComponent(filename)}`}
+              src={pub(`/scroll/${encodeURIComponent(filename)}`)}
               alt={`InfinityX Global installation ${i + 1}`}
               className="w-full h-full object-contain p-1"
               loading="lazy"

@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { pub } from "@/lib/publicPath";
 
 interface Slide {
   bg: string;
@@ -122,7 +123,7 @@ export function HeroBanner() {
             "ease-in-out",
             index === currentSlide ? "z-10 opacity-100" : "z-0 opacity-0"
           )}
-          style={{ backgroundImage: `url(${slide.bg})` }}
+          style={{ backgroundImage: `url(${pub(slide.bg)})` }}
           aria-hidden={index !== currentSlide}
         >
           <div className="absolute inset-0 flex items-start">

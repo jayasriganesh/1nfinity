@@ -32,6 +32,9 @@ const securityHeaders = [
 const nextConfig = {
   output: isGithubPages ? 'export' : undefined,
   basePath: isGithubPages ? '/1nfinity' : '',
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isGithubPages ? '/1nfinity' : '',
+  },
   images: {
     unoptimized: isGithubPages,
     remotePatterns: [

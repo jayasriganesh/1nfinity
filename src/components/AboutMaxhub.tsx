@@ -1,3 +1,5 @@
+import { pub } from "@/lib/publicPath";
+
 const stats = [
   { value: "6500+", label: "Total Employees" },
   { value: "30", label: "Average Age" },
@@ -11,7 +13,7 @@ export function AboutMaxhub() {
       className="relative flex w-full items-center bg-cover bg-center py-16 md:py-0"
       style={{
         minHeight: "500px",
-        backgroundImage: "url('/images/about/about-bg.jpg')",
+        backgroundImage: `url(${pub('/images/about/about-bg.jpg')})`,
       }}
     >
       {/* Dark overlay for text readability */}
