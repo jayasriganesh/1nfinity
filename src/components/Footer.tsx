@@ -2,12 +2,15 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { Turnstile } from '@marsidev/react-turnstile';
 
 export function Footer() {
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
   const [subStatus, setSubStatus] = useState<'idle' | 'submitting' | 'error'>('idle');
   const [subError, setSubError] = useState('');
+  const [showTurnstile, setShowTurnstile] = useState(false);
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
 
   const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -18,7 +21,7 @@ export function Footer() {
       const res = await fetch('/api/newsletter', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, 'cf-turnstile-response': turnstileToken }),
       });
       const json = await res.json();
       if (!res.ok) {
@@ -155,10 +158,20 @@ export function Footer() {
                       type="email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
+                      onFocus={() => setShowTurnstile(true)}
                       placeholder="Your email address"
                       required
                       className="flex-1 bg-transparent border border-white/30 px-[16px] py-[12px] text-[14px] text-white placeholder:text-white/40 outline-none focus:border-[#196FD2] transition-colors"
                     />
+                    {showTurnstile && process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY && (
+                      <Turnstile
+                        siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}
+                        onSuccess={setTurnstileToken}
+                        onError={() => setTurnstileToken(null)}
+                        onExpire={() => setTurnstileToken(null)}
+                        options={{ size: 'invisible' }}
+                      />
+                    )}
                     <button
                       type="submit"
                       disabled={subStatus === 'submitting'}
