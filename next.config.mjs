@@ -31,7 +31,7 @@ const securityHeaders = [
 
 const nextConfig = {
   output: isGithubPages ? 'export' : undefined,
-  basePath: isGithubPages ? '/infinityxglobal' : '',
+  basePath: isGithubPages ? '/1nfinity' : '',
   images: {
     unoptimized: isGithubPages,
     remotePatterns: [
